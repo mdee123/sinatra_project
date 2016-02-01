@@ -5,5 +5,10 @@ get '/' do
 end
 
 get '/secret' do
-  "Route two"
+  "Secret Route2"
+end
+set :session_secret, 'super secret'
+
+get '/cat' do
+  erb(:index)
 end
